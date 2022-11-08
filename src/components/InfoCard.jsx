@@ -72,12 +72,14 @@ export default function InfoCard() {
           </p>
         </div>
         <div className="rounded-sm mt-6 grid grid-cols-3 items-center">
-          <img
-            src="https://1000marcas.net/wp-content/uploads/2019/12/Visa-logo.jpg"
-            alt=""
-            className="rounded-md w-20 h-10"
-          />
-          <p className="font-semibold">Visa ending in 2255</p>
+          <div className="col-span-2 flex items-center">
+            <img
+              src="https://1000marcas.net/wp-content/uploads/2019/12/Visa-logo.jpg"
+              alt=""
+              className="rounded-md w-20 h-10"
+            />
+            <p className="font-semibold ml-2">Visa ending in 2255</p>
+          </div>
           <div>
             <button className="w-24 border border-slate-400 rounded-md h-8 transition ease-in-out duration-700 hover:border-black">
               Remove
