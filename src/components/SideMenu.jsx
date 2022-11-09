@@ -8,8 +8,13 @@ import {
 } from "react-icons/tb";
 
 export default function SideMenu() {
+  function activateInfoCard(e) {
+    e.preventDefault();
+    console.log(`you clicked me`);
+  }
+
   return (
-    <div className="bg-slate-400 w-64 h-4/5 rounded-l-2xl mt-10 flex justify-center text-gray-600 font-bold">
+    <div className="bg-slate-300 w-64 h-4/5 rounded-l-2xl mt-20 flex justify-center text-gray-600 font-bold z-20">
       {/* HEADER */}
       <div>
         <div className="px-4 py-10 flex">
@@ -29,42 +34,39 @@ export default function SideMenu() {
           <ul>
             <a href="#general">
               <li className="flex hover:text-gray-800 hover:animate-pulse mb-3 hover:border-l-2 pl-2 hover:border-slate-900">
-                <TbBoxModel2 size={24} color={"#4F4F4F"} className="mr-2"/>
+                <TbBoxModel2 size={24} color={"#4F4F4F"} className="mr-2" />
                 General
               </li>
             </a>
             <a href="#password">
               <li className="flex hover:text-gray-600 hover:animate-pulse mb-3 hover:border-l-2 pl-2 hover:border-slate-900">
-                <TbLock size={24} color={"#4F4F4F"} className="mr-2"/>
+                <TbLock size={24} color={"#4F4F4F"} className="mr-2" />
                 Password
               </li>
             </a>
             <a href="#invitations">
               <li className="flex hover:text-gray-600 hover:animate-pulse mb-3 hover:border-l-2 pl-2 hover:border-slate-900">
-                <TbMail size={24} color={"#4F4F4F"} className="mr-2"/>
+                <TbMail size={24} color={"#4F4F4F"} className="mr-2" />
                 Invitations
               </li>
             </a>
-            <a href="#billing">
+            <a href="#billing" onClick={activateInfoCard}>
               <li className="flex hover:text-gray-600 hover:animate-pulse mb-3 hover:border-l-2 pl-2 hover:border-slate-900">
-                <TbCash size={24} color={"#4F4F4F"} className="mr-2"/>
+                <TbCash size={24} color={"#4F4F4F"} className="mr-2" />
                 Billing
               </li>
             </a>
             <a href="apps">
               <li className="flex hover:text-gray-600 hover:animate-pulse mb-3 hover:border-l-2 pl-2 hover:border-slate-900">
-                <TbApps size={24} color={"#4F4F4F"} className="mr-2"/>
+                <TbApps size={24} color={"#4F4F4F"} className="mr-2" />
                 Apps
               </li>
             </a>
           </ul>
         </div>
         <div className="mt-52 p-4">
-          <a
-            href="#logout"
-            className="flex items-center hover:animate-pulse"
-          >
-            <TbLogout size={24} color={"#4F4F4F"} className="mr-1"/>
+          <a href="#logout" className="flex items-center hover:animate-pulse">
+            <TbLogout size={24} color={"#4F4F4F"} className="mr-1" />
             Log Out
           </a>
         </div>
