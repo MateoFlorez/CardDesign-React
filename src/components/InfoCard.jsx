@@ -1,6 +1,6 @@
 export default function InfoCard() {
   return (
-    <div className="bg-slate-100 w-5/12 mt-20 h-4/5 flex-col justify-center px-11 z-20">
+    <div className="bg-slate-100 w-full mt-20 h-4/5 flex-col justify-center px-11 z-20">
       <div>
         <div className="pt-11 pb-11">
           <h1 className="font-bold text-4xl">Billing</h1>
